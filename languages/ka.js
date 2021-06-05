@@ -1,0 +1,15 @@
+export default {
+	homePage: 'მთავარი',
+	visionPage: 'ხედვა',
+	aboutUsClick: 'ჩვენს შესახებ',
+	aboutPage: 'შესახებ',
+	whyFuturePageL: 'რატომ FUTURE?',
+	faqPage: 'ხშირად დასმული კითხვები',
+	productsPage: 'პროდუქტები',
+	contactPage: 'კონტაქტი',
+	homePageWelcome: 'კეთილი იყოს',
+	selectedLang: 'ქართული',
+	selectedLangImage:'https://www.countryflags.io/ge/shiny/32.png',
+	selectedLangNamesKA:'ქართული',
+	selectedLangNamesEN:'ინგლისური',
+};
