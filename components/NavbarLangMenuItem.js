@@ -24,7 +24,6 @@ const NavbarLangMenuItem = () => {
 	return (
 		 <>
 			 <Nav className="lang-menu">
-
 				 <Navbar className="selected-lang text-primary font-weight-bold">
 					 <Container>
 						 <Image
@@ -80,7 +79,7 @@ const NavbarLangMenuItem = () => {
 							 </Nav>
 						 </NavDropdown>
 					 </Container>
-					 <Navbar.Brand className={'nav-item active btn bg-white font-weight-bold'}>
+					 <Navbar.Brand className={'nav-item btn text-primary bg-white font-weight-bolder'}>
 						 <Link href="/">FUTURE-IMPLANTS</Link>
 					 </Navbar.Brand>
 				 </Navbar>

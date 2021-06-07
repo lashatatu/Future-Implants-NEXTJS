@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { useRouter } from 'next/router';
-import styles from '../styles/Home.module.css';
 import en from '../languages/en';
 import ka from '../languages/ka';
 import NavbarLangMenuItem from './NavbarLangMenuItem';
@@ -14,19 +13,18 @@ const NavigationBar = (props) => {
 		defaultLocale
 	} = useRouter();
 
+	const [show, setShow] = useState(false);
+	const showDropdown = (e) => {
+		setShow( !show);
+	};
+	const hideDropdown = e => {
+		setShow(false);
+	};
 // hover dropdown
 
 	const language = locale === 'en' ? en : ka;
 	return (
 		 <>
-			 <div className={styles.container}>
-
-				 <p>current locale: {locale}</p>
-
-				 <p>Default locale: {defaultLocale}</p>
-
-				 <p>all locales: {JSON.stringify(locales)}</p>
-			 </div>
 			 {/*// მენიუს დასაწყისი*/}
 			 <Navbar
 					collapseOnSelect
@@ -56,13 +54,12 @@ const NavigationBar = (props) => {
 						 {/*ჩვენ შესახებ*/}
 
 						 <NavDropdown
-								className={'btn dropdown-toggle text-primary font-weight-bold'}
-								type="button"
-								id="dropdownMenuButton"
-								data-toggle="dropdown"
-								aria-haspopup="true"
-								aria-expanded="false"
+								className={'btn text-primary font-weight-bold'}
+								id={'collapsible-nav-dropdown'}
 								title={<span className={'text-primary font-weight-bold'}>{language.aboutUsClick}</span>}
+								show={show}
+								onMouseEnter={showDropdown}
+								onMouseLeave={hideDropdown}
 						 >
 							 <Link
 									href={'/Vision'}
