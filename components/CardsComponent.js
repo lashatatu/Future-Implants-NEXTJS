@@ -34,7 +34,7 @@ const CardsComponent = () => {
 					className={'m-2'}
 					style={{width: '18rem'}}>
 				 <Card.Body>
-					 <Card.Title className={'font-weight-bolder'}>Placeholder</Card.Title>
+					 <Card.Title className={'font-weight-bolder'}>{language.FYIPage}</Card.Title>
 					 <Card.Text>
 						 {language.cardComponentSecondCard}
 					 </Card.Text>
@@ -70,7 +70,7 @@ const CardsComponent = () => {
 					className={'m-2'}
 					style={{width: '18rem'}}>
 				 <Card.Body>
-					 <Card.Title className={'font-weight-bolder'}>Placeholder</Card.Title>
+					 <Card.Title className={'font-weight-bolder'}>{language.trainingPage}</Card.Title>
 					 <Card.Text>
 						 {language.cardComponentFourthCard}
 					 </Card.Text>

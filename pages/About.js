@@ -1,9 +1,10 @@
 import React from 'react';
+import SideMenuComponent from '../components/SideMenuComponent';
 
 const About = () => {
 	return (
 		 <div>
-			 <h1>about</h1>
+			 <SideMenuComponent/>
 		 </div>
 	);
 };

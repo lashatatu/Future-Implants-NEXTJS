@@ -8,6 +8,8 @@ export default {
 	productsPage: 'პროდუქტები',
 	contactPage: 'კონტაქტი',
 	homePageWelcome: 'კეთილი იყოს',
+	FYIPage:'თქვენი ინფორმაციისთვის',
+	trainingPage:'პერსონალური ტრენინგი',
 	selectedLang: 'ქართული',
 	selectedLangImage:'https://www.countryflags.io/ge/shiny/32.png',
 	selectedLangNamesKA:'ქართული',

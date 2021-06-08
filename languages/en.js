@@ -8,6 +8,8 @@ export default {
 	productsPage: 'Products',
 	contactPage: 'Contacts',
 	homePageWelcome: 'Welcome',
+	FYIPage:'FYI',
+	trainingPage:'Personal training',
 	selectedLang: 'English',
 	selectedLangImage: 'https://www.countryflags.io/us/shiny/32.png',
 	selectedLangNamesKA: 'Georgian',
