@@ -6,12 +6,13 @@ import SideMenuComponent from '../components/SideMenuComponent';
 
 const Contact = () => {
 	return (
-		 <div>
+		 <>
+
 			 <SideMenuComponent/>
 			 <h1 className={styles.title}>
 				 Contact page
 			 </h1>
-		 </div>
+		 </>
 	);
 };
 

@@ -13,7 +13,7 @@ export default function Home () {
 	const language = locale === 'en' ? en : ka;
 
 	return (
-		 <div className={styles.container}>
+		 <>
 			 <Head>
 				 <title>Future Implants</title>
 				 <meta
@@ -23,8 +23,9 @@ export default function Home () {
 						rel="icon"
 						href="/favicon.ico" />
 			 </Head>
+
 			 <CarouselComponent/>
 			 <CardsComponent />
-		 </div>
+		 </>
 	);
 }

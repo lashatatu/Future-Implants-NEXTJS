@@ -3,10 +3,11 @@ import SideMenuComponent from '../components/SideMenuComponent';
 
 const ForYourInformation = () => {
 	return (
-		 <div>
+		 <>
+
 			 <SideMenuComponent/>
 
-		 </div>
+		 </>
 	);
 };
 
