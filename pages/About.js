@@ -4,14 +4,15 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useRouter } from 'next/router';
 import en from '../languages/en';
 import ka from '../languages/ka';
+import enAboutUs from '../languages/enAboutUs';
+import kaAboutUs from '../languages/kaAboutUs';
 
 const About = () => {
 
 	const {
 		locale
 	} = useRouter();
-	const language = locale === 'en' ? en : ka;
-	const lang=language.aboutUsTexts
+	const language = locale === 'en' ? enAboutUs : kaAboutUs;
 
 	return (
 		 <>
@@ -26,48 +27,48 @@ const About = () => {
 					 <Col className={'col-xl-9 col-lg-9 p-0'}>
 						 <div>
 							 <h2 className={'text-center text-white font-weight-bolder h2'}>
-								 {language.aboutUsTexts.firstTextTitle}
+								 {language.firstTextTitle}
 							 </h2>
 							 <h5 className={'text-white h5'}>
-								 {language.aboutUsTexts.fifthText}
+								 {language.firstText}
 							 </h5>
 						 </div>
 						 <div>
 							 <h2 className={'text-center text-white font-weight-bolder h2'}>
-								 {language.aboutUsTexts.secondTextTitle}
+								 {language.secondTextTitle}
 							 </h2>
 							 <h5 className={'text-white h5'}>
-								 {language.aboutUsTexts.secondText}
+								 {language.secondText}
 							 </h5>
 						 </div>
 						 <div>
 							 <h2 className={'text-center text-white font-weight-bolder h2'}>
-								 {language.aboutUsTexts.thirdTextTitle}
+								 {language.thirdTextTitle}
 							 </h2>
 							 <h5 className={'text-white h5'}>
-								 {language.aboutUsTexts.thirdText}
+								 {language.thirdText}
 							 </h5>
 						 </div>
 						 <div>
 							 <h2 className={'text-center text-white font-weight-bolder h2'}>
-								 {language.aboutUsTexts.fourthTextTitle}
+								 {language.fourthTextTitle}
 							 </h2>
 							 <h5 className={'text-white h5'}>
-								 {language.aboutUsTexts.fourthText}
+								 {language.fourthText}
 							 </h5>
 						 </div>
 						 <div>
 							 <h2 className={'text-center text-white font-weight-bolder h2'}>
-								 {language.aboutUsTexts.fifthTextTitle}
+								 {language.fifthTextTitle}
 							 </h2>
 							 <h5 className={'text-white h5'}>
 								 <ul>
-									 <li>{lang.fifthTextFirst}</li>
-									 <li>{lang.fifthTextSecond}</li>
-									 <li>{lang.fifthTextThird}</li>
-									 <li>{lang.fifthTextFourth}</li>
-									 <li>{lang.fifthTextFifth}</li>
-									 <li>{lang.fifthTextSixth}</li>
+									 <li>{language.fifthTextFirst}</li>
+									 <li>{language.fifthTextSecond}</li>
+									 <li>{language.fifthTextThird}</li>
+									 <li>{language.fifthTextFourth}</li>
+									 <li>{language.fifthTextFifth}</li>
+									 <li>{language.fifthTextSixth}</li>
 								 </ul>
 							 </h5>
 						 </div>

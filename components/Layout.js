@@ -1,11 +1,11 @@
 import React from 'react';
-import NavigationBar from './NavigationBar';
+import NavBar from './NavBar';
 import FooterComponent from './FooterComponent';
 
 const Layout = ({children}) => {
 	return (
 		 <div className={'content'}>
-			 <NavigationBar />
+			 <NavBar />
 			 {children}
 			 <FooterComponent />
 		 </div>

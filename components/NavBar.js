@@ -6,7 +6,7 @@ import en from '../languages/en';
 import ka from '../languages/ka';
 import NavbarLangMenuItem from './NavbarLangMenuItem';
 
-const NavigationBar = (props) => {
+const NavBar = (props) => {
 	const {
 		locale,
 		locales,
@@ -142,4 +142,4 @@ export const getStaticProps = ({
 	};
 };
 
-export default NavigationBar;
+export default NavBar;
