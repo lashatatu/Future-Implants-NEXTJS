@@ -26,8 +26,7 @@ const NavigationBar = (props) => {
 	return (
 		 <>
 			 {/*// მენიუს დასაწყისი*/}
-			 <Container>
-				 <Col>
+
 
 					 <Navbar
 							collapseOnSelect
@@ -126,8 +125,7 @@ const NavigationBar = (props) => {
 						 <NavbarLangMenuItem />
 
 					 </Navbar>
-				 </Col>
-			 </Container>
+
 		 </>
 	);
 };
