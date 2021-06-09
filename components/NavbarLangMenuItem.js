@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Col, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import Image from 'next/image';
 import Link from 'next/link';
 import en from '../languages/en';
@@ -24,25 +24,25 @@ const NavbarLangMenuItem = () => {
 	return (
 		 <>
 			 <Nav className="lang-menu">
-				 <Navbar className="selected-lang text-primary font-weight-bold">
+				 <Navbar className="selected-lang text-primary font-weight-bold d-flex justify-content-center">
 					 <Container>
-						 <Image
-								src={language.selectedLangImage}
-								alt="Current website language"
-								width={25}
-								height={25}
-						 />
-						 <NavDropdown
-								className="text-primary font-weight-bold "
-								id={'collapsible-nav-dropdown'}
-								title={<span className={'text-primary font-weight-bold'}>{language.selectedLang}</span>}
-								show={show}
-								onMouseEnter={showDropdown}
-								onMouseLeave={hideDropdown}
-						 >
-							 <Nav className="text-primary font-weight-bold">
-								 <ul className={'pl-2 m-0'}>
-									 <li className={'font-weight-bold list-unstyled'}>
+							 <Image
+									src={language.selectedLangImage}
+									alt="Current website language"
+									width={25}
+									height={25}
+							 />
+							 <NavDropdown
+									className="text-primary font-weight-bold p-0"
+									id={'collapsible-nav-dropdown'}
+									title={<span className={'text-primary font-weight-bold'}>{language.selectedLang}</span>}
+									show={show}
+									onMouseEnter={showDropdown}
+									onMouseLeave={hideDropdown}
+							 >
+								 <Nav className="text-primary font-weight-bold">
+									 <ul className={'pl-2 m-0'}>
+										 <li className={'font-weight-bold list-unstyled'}>
 										 <span className={'p-2'}>
 											 <Image
 													src={'https://www.countryflags.io/ge/shiny/32.png'}
@@ -51,15 +51,15 @@ const NavbarLangMenuItem = () => {
 													height={20}
 											 />
 										 </span>
-										 <Link
-												className={'ka text-primary font-weight-bold'}
-												active={locale === 'ka'}
-												href={asPath}
-												locale="ka">
-											 {language.selectedLangNamesKA}
-										 </Link>
-									 </li>
-									 <li className={'font-weight-bold list-unstyled'}>
+											 <Link
+													className={'ka text-primary font-weight-bold'}
+													active={locale === 'ka'}
+													href={asPath}
+													locale="ka">
+												 {language.selectedLangNamesKA}
+											 </Link>
+										 </li>
+										 <li className={'font-weight-bold list-unstyled'}>
 										 <span className={'p-2'}>
 											 <Image
 													src={'https://www.countryflags.io/us/shiny/32.png'}
@@ -68,16 +68,16 @@ const NavbarLangMenuItem = () => {
 													height={20}
 											 />
 										 </span>
-										 <Link
-												active={locale === 'en'}
-												href={asPath}
-												locale="en">
-											 {language.selectedLangNamesEN}
-										 </Link>
-									 </li>
-								 </ul>
-							 </Nav>
-						 </NavDropdown>
+											 <Link
+													active={locale === 'en'}
+													href={asPath}
+													locale="en">
+												 {language.selectedLangNamesEN}
+											 </Link>
+										 </li>
+									 </ul>
+								 </Nav>
+							 </NavDropdown>
 					 </Container>
 					 <Navbar.Brand className={'nav-item btn text-primary bg-white font-weight-bolder'}>
 						 <Link href="/">FUTURE-IMPLANTS</Link>

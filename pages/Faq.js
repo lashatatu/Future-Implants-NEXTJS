@@ -25,7 +25,7 @@ const faq = () => {
 							 </h2>
 						 </div>
 						 <Accordion defaultActiveKey="0">
-							 <Card className={'bg-primary border-primary'}>
+							 <Card className={'bg-primary border-white'}>
 								 <Accordion.Toggle as={Card.Header} eventKey="0" className={'text-white font-weight-bold'}>
 									 {language.faqFirstElement}
 								 </Accordion.Toggle>
@@ -33,11 +33,46 @@ const faq = () => {
 									 <Card.Body className={'text-white font-weight-bold'}>{language.faqFirstElementText}</Card.Body>
 								 </Accordion.Collapse>
 							 </Card>
+
+							 <Card className={'bg-primary border-white'}>
+								 <Accordion.Toggle as={Card.Header} eventKey="1" className={'text-white font-weight-bold'}>
+									 {language.faqSecondElement}
+								 </Accordion.Toggle>
+								 <Accordion.Collapse eventKey="1" className={'bg-dark'}>
+									 <Card.Body className={'text-white font-weight-bold'}>{language.faqSecondElement}</Card.Body>
+								 </Accordion.Collapse>
+							 </Card>
+
+							 <Card className={'bg-primary border-white'}>
+								 <Accordion.Toggle as={Card.Header} eventKey="2" className={'text-white font-weight-bold'}>
+									 {language.faqThirdElement}
+								 </Accordion.Toggle>
+								 <Accordion.Collapse eventKey="2" className={'bg-dark'}>
+									 <Card.Body className={'text-white font-weight-bold'}>{language.faqThirdElementText}</Card.Body>
+								 </Accordion.Collapse>
+							 </Card>
+
+							 <Card className={'bg-primary border-white'}>
+								 <Accordion.Toggle as={Card.Header} eventKey="3" className={'text-white font-weight-bold'}>
+									 {language.faqFourthElement}
+								 </Accordion.Toggle>
+								 <Accordion.Collapse eventKey="3" className={'bg-dark'}>
+									 <Card.Body className={'text-white font-weight-bold'}>{language.faqFourthElementText}</Card.Body>
+								 </Accordion.Collapse>
+							 </Card>
+
+							 <Card className={'bg-primary border-white'}>
+								 <Accordion.Toggle as={Card.Header} eventKey="4" className={'text-white font-weight-bold'}>
+									 {language.faqFifthElement}
+								 </Accordion.Toggle>
+								 <Accordion.Collapse eventKey="4" className={'bg-dark'}>
+									 <Card.Body className={'text-white font-weight-bold'}>{language.faqFifthElementText}</Card.Body>
+								 </Accordion.Collapse>
+							 </Card>
 						 </Accordion>
 					 </Col>
 				 </Row>
 			 </Container>
-			 <h1>faq</h1>
 		 </>
 	);
 };

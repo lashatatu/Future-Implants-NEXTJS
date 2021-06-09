@@ -8,7 +8,7 @@ export default {
  mandibular and maxillary voids and to rehabilitate the mouth. Implants can provide
  substitution of a single tooth or a number of teeth.`,
 	faqSecondElement: `Can everyone have tooth implantation?`,
-	faqSecondElementTitle: `Every patient must be medically examined by the
+	faqSecondElementText: `Every patient must be medically examined by the
  dentist in order to determine the appropriate location and medical procedure for the dental
  implantation. The dentist must be sure that there are no health risks and that there will
  not be any adverse effects on the recovery and healing of the bone or the soft tissues.
@@ -30,6 +30,6 @@ procedure should be reconsidered. If a patient suffers connective tissue disorde
  an ultimate substitute for a missing tooth (or missing teeth). FUTURE provides a complete
  product package which includes multiple rehabilitation parts and enables the dentist to
  reconstitute your natural smile.`,
-	faqSixthElement: `Need further information?`,
-	faqSixthElementText: `Dentists who work with FUTURE will be provided with the information required regarding treatment planning and professional medical evaluation, in addition to comprehensive education about FUTURE's range of implants`
+	faqFifthElement: `Need further information?`,
+	faqFifthElementText: `Dentists who work with FUTURE will be provided with the information required regarding treatment planning and professional medical evaluation, in addition to comprehensive education about FUTURE's range of implants`
 };

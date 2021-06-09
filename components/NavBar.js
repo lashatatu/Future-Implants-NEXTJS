@@ -26,14 +26,12 @@ const NavBar = (props) => {
 	return (
 		 <>
 			 {/*// მენიუს დასაწყისი*/}
-
-
 					 <Navbar
 							collapseOnSelect
 							fixed={'top'}
 							expand={'lg'}
 							bg={'white'}
-							className={'navbar navbar-expand-lg navbar-dark fixed-top p-0'}
+							className={'navbar navbar-expand-lg navbar-dark fixed-top p-0 d-flex justify-content-center'}
 							variant="pills">
 						 {/*// მობილური ვერსიისთვის მენიუს ჩამოწევა*/}
 						 <Navbar.Toggle
@@ -68,7 +66,8 @@ const NavBar = (props) => {
 											passHref>
 										 <NavDropdown.Item
 												eventKey="4.1"
-												className={'text-primary font-weight-bold'}>{language.visionPage}</NavDropdown.Item>
+												className={'text-primary font-weight-bold'}>
+											 {language.visionPage}</NavDropdown.Item>
 									 </Link>
 									 <Link
 											href={'/About'}
