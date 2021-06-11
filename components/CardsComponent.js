@@ -2,14 +2,16 @@ import React from 'react';
 import { Card, Container, Row } from 'react-bootstrap';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import en from '../languages/en';
+import Link from 'next/link'
 import ka from '../languages/ka';
+import en from '../languages/en';
+
 
 const CardsComponent = () => {
 	const {
 		locale
 	} = useRouter();
-	const language = locale === 'en' ? en : ka;
+	const language = locale === 'ka' ? ka : en;
 	return (
 		 <>
 			 <Container>
@@ -28,9 +30,9 @@ const CardsComponent = () => {
 									width={286}
 									height={180}
 							 />
-							 <a
-									href={'/Faq'}
-									className={'btn btn-secondary text-white font-weight-bold d-flex justify-content-center'}>{language.cardComponentButtonLinkText}</a>
+							 <Link href={'/Faq'}>
+								 <a className={'btn btn-secondary text-white font-weight-bold d-flex justify-content-center'}>{language.cardComponentButtonLinkText}</a>
+							 </Link>
 						 </Card.Body>
 					 </Card>
 					 <Card
@@ -47,7 +49,9 @@ const CardsComponent = () => {
 									width={286}
 									height={180}
 							 />
-							 <a className={'btn btn-secondary text-white font-weight-bold d-flex justify-content-center'}>{language.cardComponentButtonLinkText}</a>
+							 <Link href="/ForYourInformation">
+								 <a className={'btn btn-secondary text-white font-weight-bold d-flex justify-content-center'}>{language.cardComponentButtonLinkText}</a>
+							 </Link>
 						 </Card.Body>
 					 </Card>
 
@@ -65,7 +69,9 @@ const CardsComponent = () => {
 									width={286}
 									height={180}
 							 />
-							 <a className={'btn btn-secondary text-white font-weight-bold d-flex justify-content-center'}>{language.cardComponentButtonLinkText}</a>
+							 <Link href="/WhyFuture">
+								 <a className={'btn btn-secondary text-white font-weight-bold d-flex justify-content-center'}>{language.cardComponentButtonLinkText}</a>
+							 </Link>
 						 </Card.Body>
 					 </Card>
 
@@ -83,7 +89,9 @@ const CardsComponent = () => {
 									width={286}
 									height={180}
 							 />
-							 <a className={'btn btn-secondary text-white font-weight-bold d-flex justify-content-center'}>{language.cardComponentButtonLinkText}</a>
+							 <Link href="/Training">
+								 <a className={'btn btn-secondary text-white font-weight-bold d-flex justify-content-center'}>{language.cardComponentButtonLinkText}</a>
+							 </Link>
 						 </Card.Body>
 					 </Card>
 

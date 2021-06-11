@@ -10,7 +10,7 @@ export default function Home () {
 	const {
 		locale,
 	} = useRouter();
-	const language = locale === 'en' ? en : ka;
+	const language = locale === 'ka' ? ka : en;
 
 	return (
 		 <>
