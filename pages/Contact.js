@@ -75,7 +75,7 @@ const Contact = () => {
 								 </Form.Row>
 
 								 <Form.Group controlId="formGridAddress2">
-									 <Form.Text>{language.contactAddress}</Form.Text>
+									 <Form.Text><h4>{language.contactAddress}</h4></Form.Text>
 									 <Form.Control />
 								 </Form.Group>
 
