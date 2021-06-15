@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import { useRouter } from 'next/router';
 import en from '../languages/en';
 import ka from '../languages/ka';
+import { Container } from 'react-bootstrap';
 
 const FooterComponent = () => {
 	const {
@@ -10,8 +11,8 @@ const FooterComponent = () => {
 	} = useRouter();
 	const language = locale === 'en' ? en : ka;
 	return (
-		 <div>
-			 <footer className={`d-flex justify-content-center p-5`}>
+		 <Container>
+			 <footer className={`d-flex justify-content-center p-2`}>
 				 <a
 						className={'text-white font-weight-bold'}
 						href="https://github.com/lashatatu"
@@ -21,7 +22,7 @@ const FooterComponent = () => {
 					 {language.madeBy} {' '}
 				 </a>
 			 </footer>
-		 </div>
+		 </Container>
 	);
 };
 

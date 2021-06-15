@@ -4,6 +4,8 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useRouter } from 'next/router';
 import enVision from '../languages/enVision';
 import kaVision from '../languages/kaVision';
+import Layout from '../components/Layout';
+import FooterComponent from '../components/FooterComponent';
 
 const Vision = () => {
 	const {
@@ -11,7 +13,7 @@ const Vision = () => {
 	} = useRouter();
 	const language = locale === 'en' ? enVision : kaVision;
 	return (
-		 <>
+		 <Layout title={`Vision | ხედვა`}>
 			 <Container>
 				 <Row>
 					 <SideMenuComponent />
@@ -53,7 +55,8 @@ const Vision = () => {
 					 </Col>
 				 </Row>
 			 </Container>
-		 </>
+			 <FooterComponent />
+		 </Layout>
 	);
 };
 

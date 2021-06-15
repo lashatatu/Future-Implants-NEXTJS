@@ -62,6 +62,20 @@ const CarouselComponent = () => {
 						 </div>
 					 </div>
 				 </Carousel.Item>
+				 <Carousel.Item interval={2000}>
+					 <div className={'row d-flex justify-content-center'}>
+						 <Image
+								className="d-block w-100"
+								src="/003.jpg"
+								width={800}
+								height={500}
+						 />
+						 <div className={'col-md-4 carousel-text-styles-right my-auto text-white font-weight-bold'}>
+							 <h1>"Peace begins with a smile"</h1>
+							 <h3>– Mother Teresa</h3>
+						 </div>
+					 </div>
+				 </Carousel.Item>
 			 </Carousel>
 		 </>
 	);

@@ -6,6 +6,7 @@ import en from '../languages/en';
 import ka from '../languages/ka';
 import enAboutUs from '../languages/enAboutUs';
 import kaAboutUs from '../languages/kaAboutUs';
+import Layout from '../components/Layout';
 
 const About = () => {
 
@@ -15,7 +16,7 @@ const About = () => {
 	const language = locale === 'en' ? enAboutUs : kaAboutUs;
 
 	return (
-		 <>
+		 <Layout title={'About | ჩვენს შესახებ'}>
 			 <Container>
 				 <video
 				 	autoPlay
@@ -75,7 +76,7 @@ const About = () => {
 					 </Col>
 				 </Row>
 			 </Container>
-		 </>
+		 </Layout>
 	);
 };
 

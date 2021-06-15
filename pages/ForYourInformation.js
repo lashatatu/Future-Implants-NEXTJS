@@ -4,6 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useRouter } from 'next/router';
 import en from '../languages/enFYI';
 import ka from '../languages/kaFYI';
+import Layout from '../components/Layout';
 
 const ForYourInformation = () => {
 	const {
@@ -11,7 +12,7 @@ const ForYourInformation = () => {
 	} = useRouter();
 	const language = locale === 'en' ? en : ka;
 	return (
-		 <>
+		 <Layout title={`FYI`}>
 
 			 <Container>
 				 <Row>
@@ -48,7 +49,7 @@ const ForYourInformation = () => {
 				 </Row>
 			 </Container>
 
-		 </>
+		 </Layout>
 	);
 };
 

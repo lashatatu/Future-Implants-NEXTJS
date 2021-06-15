@@ -4,6 +4,8 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useRouter } from 'next/router';
 import en from '../languages/enTraining';
 import ka from '../languages/kaTraining';
+import Layout from '../components/Layout';
+import FooterComponent from '../components/FooterComponent';
 
 const Training = () => {
 	const {
@@ -11,7 +13,7 @@ const Training = () => {
 	} = useRouter();
 	const language = locale === 'en' ? en : ka;
 	return (
-		 <>
+		 <Layout title={`Training | სწავლება`}>
 
 			 <Container>
 				 <Row>
@@ -51,8 +53,8 @@ const Training = () => {
 					 </Col>
 				 </Row>
 			 </Container>
-
-		 </>
+			 <FooterComponent />
+		 </Layout>
 	);
 };
 

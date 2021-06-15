@@ -6,6 +6,7 @@ import ka from '../languages/ka';
 import { Accordion, Card, Col, Container, Row } from 'react-bootstrap';
 import enFAQ from '../languages/enFAQ';
 import kaFAQ from '../languages/kaFAQ';
+import Layout from '../components/Layout';
 
 const faq = () => {
 	const {
@@ -14,7 +15,7 @@ const faq = () => {
 	const language = locale === 'en' ? enFAQ : kaFAQ;
 
 	return (
-		 <>
+		 <Layout title={`FAQ`}>
 			 <Container>
 				 <Row>
 					 <SideMenuComponent/>
@@ -73,7 +74,7 @@ const faq = () => {
 					 </Col>
 				 </Row>
 			 </Container>
-		 </>
+		 </Layout>
 	);
 };
 

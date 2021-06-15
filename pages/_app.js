@@ -10,7 +10,7 @@ function MyApp ({
 	pageProps
 }) {
 	return (
-		 <Layout>
+		 <Layout  title={`Future Implants | მომავლის სტომატოლოგია`} keywords={`სტომატოლოგი, სტომატოლოგია, კბილები, სილამაზე, ჯანსაღი, ცხოვრება, კვილების გალამაზება`}>
 			 <Component {...pageProps} />
 		 </Layout>
 	);

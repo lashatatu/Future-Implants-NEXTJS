@@ -4,6 +4,8 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useRouter } from 'next/router';
 import enProducts from '../languages/enProducts';
 import kaProducts from '../languages/kaProducts';
+import Layout from '../components/Layout';
+import FooterComponent from '../components/FooterComponent';
 
 const Products = () => {
 
@@ -12,7 +14,7 @@ const Products = () => {
 	} = useRouter();
 	const language = locale === 'en' ? enProducts : kaProducts;
 	return (
-		 <>
+		 <Layout title={`Products | პროდუქტები`}>
 			 <Container>
 				 <Row>
 					 <SideMenuComponent />
@@ -44,7 +46,8 @@ const Products = () => {
 					 </Col>
 				 </Row>
 			 </Container>
-		 </>
+			 <FooterComponent />
+		 </Layout>
 );
 };
 

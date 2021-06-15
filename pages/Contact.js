@@ -4,12 +4,13 @@ import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { useRouter } from 'next/router';
 import kaContact from '../languages/kaContact';
 import enContact from '../languages/enContact';
+import Layout from '../components/Layout';
 
 const Contact = () => {
 	const {locale} = useRouter();
 	const language = locale === 'ka' ? kaContact : enContact;
 	return (
-		 <>
+		 <Layout title={`Contact | კონტაქტი`}>
 			 <Container>
 				 <Row>
 					 <SideMenuComponent />
@@ -91,7 +92,7 @@ const Contact = () => {
 					 </Col>
 				 </Row>
 			 </Container>
-		 </>
+		 </Layout>
 	);
 };
 

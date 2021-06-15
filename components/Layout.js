@@ -15,7 +15,7 @@ const Layout = ({title,keywords,description,children}) => {
 			 </Head>
 			 <NavBar />
 			 {children}
-			 <FooterComponent />
+
 		 </div>
 	);
 };

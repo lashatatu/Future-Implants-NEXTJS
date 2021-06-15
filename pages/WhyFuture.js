@@ -4,6 +4,8 @@ import { useRouter } from 'next/router';
 import enWhyFuture from '../languages/enWhyFuture';
 import kaWhyFuture from '../languages/kaWhyFuture';
 import { Col, Container, Row } from 'react-bootstrap';
+import Layout from '../components/Layout';
+import FooterComponent from '../components/FooterComponent';
 
 const WhyFuture = () => {
 
@@ -12,7 +14,7 @@ const WhyFuture = () => {
 	} = useRouter();
 	const language = locale === 'en' ? enWhyFuture : kaWhyFuture;
 	return (
-		 <>
+		 <Layout title={`Why Future? | რატომ Future?`}>
 			 <Container>
 				 <Row>
 					 <SideMenuComponent />
@@ -63,7 +65,8 @@ const WhyFuture = () => {
 					 </Col>
 				 </Row>
 			 </Container>
-		 </>
+			 <FooterComponent />
+		 </Layout>
 	);
 };
 
