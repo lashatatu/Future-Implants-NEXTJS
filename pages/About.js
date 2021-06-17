@@ -21,7 +21,7 @@ const About = () => {
 				 <video
 				 	autoPlay
 				 	className="container-fluid p-3 col-lg-12 col-md-12 col-sm-12 embed-responsive embed-responsive-16by9 align-items-center">
-				  <source src="/futureImplantsGe.mp4" />
+				  <source src="/futureDentists.mp4" />
 				 </video>
 				 <Row>
 					 <SideMenuComponent/>
