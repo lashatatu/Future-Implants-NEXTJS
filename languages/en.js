@@ -19,5 +19,6 @@ export default {
 	cardComponentSecondCard: `Research shows that the success rate for tooth implantation using dental implants is 90%`,
 	cardComponentThirdCard: `Our company is committed to the highest standards, backed by uncompromising service`,
 	cardComponentFourthCard: `We provide our clients personal training and a monitoring service for patients so that they enjoy a high quality of life`,
-	cardComponentButtonLinkText: 'More'
+	cardComponentButtonLinkText: 'More',
+	randomComponentText:`17 June 2021 Hotel Courtyard by Marriott Tbilisi, Grand ballroom`,
 };

@@ -5,6 +5,6 @@ module.exports={
 		defaultLocale: 'ka'
 	},
 	images:{
-		domains:['www.countryflags.io']
+		domains:['www.countryflags.io','placekitten.com']
 	}
 }
