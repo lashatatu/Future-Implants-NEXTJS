@@ -6,6 +6,7 @@ import CarouselComponent from '../components/CarouselComponent';
 import RandomCrapComponent from './RandomCrapComponent';
 import FooterComponent from '../components/FooterComponent';
 import React from 'react';
+import Head from 'next/head';
 
 export default function Home () {
 	const {
