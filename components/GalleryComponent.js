@@ -18,6 +18,24 @@ const GalleryComponent = () => {
 					 <section className={'p-2 d-flex justify-content-center'}>
 						 <Image
 								className={'p-2'}
+								src={`/medea_deda2.jpg`}
+								alt="Picture of the author"
+								height={750}
+								width={500} />
+
+					 </section>
+					 <section className={'p-2 d-flex justify-content-center'}>
+						 <Image
+								src={`/medea_deda1.jpg`}
+								alt="Picture of the author"
+								height={700}
+								width={1064} />
+
+					 </section>
+
+					 <section className={'p-2 d-flex justify-content-center'}>
+						 <Image
+								className={'p-2'}
 								src={`/gallery/first.jpg`}
 								alt="Picture of the author"
 								height={800}
@@ -31,7 +49,6 @@ const GalleryComponent = () => {
 					 </section>
 					 <section className={'p-2 d-flex justify-content-center'}>
 						 <Image
-
 								src={`/gallery/second.jpg`}
 								alt="Picture of the author"
 								height={700}
